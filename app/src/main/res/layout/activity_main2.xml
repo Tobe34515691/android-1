@@ -7,27 +7,29 @@
     tools:context=".MainActivity2">
 
     <ImageView
-        android:id="@+id/a5"
+        android:id="@+id/a14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/a5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="2dp" />
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a5" />
 
     <ImageView
-        android:id="@+id/a6"
+        android:id="@+id/a15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/a6"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a16"
+        app:srcCompat="@drawable/a6" />
 
     <ImageView
-        android:id="@+id/a7"
+        android:id="@+id/a16"
         android:layout_width="428dp"
         android:layout_height="562dp"
-        app:srcCompat="@drawable/a7"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="2dp" />
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
