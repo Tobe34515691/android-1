@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity(),LocationListener {
         binding.imageView4.alpha=0f
         binding.imageView5.alpha=0f
         binding.imageView6.alpha=0f
+        binding.imageView7.alpha=0f
+        binding.imageView8.alpha=0f
                 if(hasGPS ||hasNetwork){
             if (ActivityCompat.checkSelfPermission(
                     this,
@@ -137,6 +139,24 @@ class MainActivity : AppCompatActivity(),LocationListener {
                     }
                 }
             }
+            if (x < 121.4633) {
+                if (x > 121.4628) {
+                    if (y > 25.0203) {
+                        if (y < 25.0206) {
+                            z = 7
+                        }
+                    }
+                }
+            }
+            if (x < 121.4632) {
+                if (x > 121.4627) {
+                    if (y > 25.0212) {
+                        if (y < 25.0218) {
+                            z = 8
+                        }
+                    }
+                }
+            }
 
             binding.imageView1.alpha = 0f
             binding.imageView2.alpha = 0f
@@ -144,10 +164,8 @@ class MainActivity : AppCompatActivity(),LocationListener {
             binding.imageView4.alpha = 0f
             binding.imageView5.alpha = 0f
             binding.imageView6.alpha = 0f
-
-
-
-
+            binding.imageView7.alpha = 0f
+            binding.imageView8.alpha = 0f
             if (z == 1) {
                 binding.textView.text = "綜合大樓"
                 binding.imageView1.alpha = 1f
@@ -166,10 +184,24 @@ class MainActivity : AppCompatActivity(),LocationListener {
             } else if (z == 6) {
                 binding.textView.text = "仁愛樓"
                 binding.imageView6.alpha = 1f
-            }else{
+                binding.imageView7.alpha = 1f
+            }else if (z == 7) {
+                binding.textView.text = "誠信館"
+                binding.imageView7.alpha = 1f
+            } else if (z == 8) {
+                binding.textView.text = "人文大樓"
+                binding.imageView8.alpha = 1f
+            } else {
+                z=9
+                binding.textView.text = "不再大樓內"
+                binding.imageView1.alpha = 0f
+                binding.imageView2.alpha = 0f
+                binding.imageView3.alpha = 0f
                 binding.imageView4.alpha = 0f
                 binding.imageView5.alpha = 0f
                 binding.imageView6.alpha = 0f
+                binding.imageView7.alpha = 0f
+                binding.imageView8.alpha = 0f
             }
         }
     }
