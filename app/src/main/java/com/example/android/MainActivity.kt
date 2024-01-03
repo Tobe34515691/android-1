@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(),LocationListener {
     private var hasNetwork:Boolean=true
 
 
-    @SuppressLint("ServiceCast", "SuspiciousIndentation")
+    @SuppressLint("ServiceCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityMainBinding.inflate(layoutInflater)
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(),LocationListener {
         binding.imageView6.alpha=0f
         binding.imageView7.alpha=0f
         binding.imageView8.alpha=0f
-                if(hasGPS ||hasNetwork){
+        if(hasGPS ||hasNetwork){
             if (ActivityCompat.checkSelfPermission(
                     this,
                     Manifest.permission.ACCESS_FINE_LOCATION
@@ -157,7 +157,6 @@ class MainActivity : AppCompatActivity(),LocationListener {
                     }
                 }
             }
-
             binding.imageView1.alpha = 0f
             binding.imageView2.alpha = 0f
             binding.imageView3.alpha = 0f
@@ -166,32 +165,36 @@ class MainActivity : AppCompatActivity(),LocationListener {
             binding.imageView6.alpha = 0f
             binding.imageView7.alpha = 0f
             binding.imageView8.alpha = 0f
+
+
+
+
+
             if (z == 1) {
                 binding.textView.text = "綜合大樓"
                 binding.imageView1.alpha = 1f
-            }else if (z == 2) {
+            } else if (z == 2) {
                 binding.textView.text = "和平樓"
                 binding.imageView2.alpha = 1f
-            }else if (z == 3) {
+            } else if (z == 3) {
                 binding.textView.text = "行政大樓"
                 binding.imageView3.alpha = 1f
-            }else if (z == 4) {
+            } else if (z == 4) {
                 binding.textView.text = "信義大樓"
                 binding.imageView4.alpha = 1f
-            }else if (z == 5) {
+            } else if (z == 5) {
                 binding.textView.text = "圖書館"
                 binding.imageView5.alpha = 1f
-            }else if (z == 6) {
+            } else if (z == 6) {
                 binding.textView.text = "仁愛樓"
                 binding.imageView6.alpha = 1f
-                binding.imageView7.alpha = 1f
-            }else if (z == 7) {
+            } else if (z == 7) {
                 binding.textView.text = "誠信館"
                 binding.imageView7.alpha = 1f
-            }else if (z == 8) {
+            } else if (z == 8) {
                 binding.textView.text = "人文大樓"
                 binding.imageView8.alpha = 1f
-            }else {
+            } else {
                 z=9
                 binding.textView.text = "不再大樓內"
                 binding.imageView1.alpha = 0f
