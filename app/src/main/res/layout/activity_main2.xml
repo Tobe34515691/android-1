@@ -45,17 +45,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/a16"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/a6" />
 
     <ImageView
         android:id="@+id/a16"
-        android:layout_width="428dp"
-        android:layout_height="562dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="410dp"
+        android:layout_height="620dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/a7" />
+        app:srcCompat="@drawable/zcxv" />
 
     <ImageView
         android:id="@+id/a17"
