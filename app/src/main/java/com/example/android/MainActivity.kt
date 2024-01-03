@@ -51,6 +51,9 @@ class MainActivity : AppCompatActivity(),LocationListener {
         binding.imageView1.alpha=0f
         binding.imageView2.alpha=0f
         binding.imageView3.alpha=0f
+        binding.imageView4.alpha=0f
+        binding.imageView5.alpha=0f
+        binding.imageView6.alpha=0f
                 if(hasGPS ||hasNetwork){
             if (ActivityCompat.checkSelfPermission(
                     this,
@@ -107,11 +110,40 @@ class MainActivity : AppCompatActivity(),LocationListener {
                     }
                 }
             }
+            if (x < 121.4643) {
+                if (x > 121.4637) {
+                    if (y > 25.0208) {
+                        if (y < 25.0211) {
+                            z = 4
+                        }
+                    }
+                }
+            }
+            if (x < 121.4644) {
+                if (x > 121.4639) {
+                    if (y > 25.0201) {
+                        if (y < 25.0205) {
+                            z = 5
+                        }
+                    }
+                }
+            }
+            if (x < 121.4639) {
+                if (x > 121.4633) {
+                    if (y > 25.0202) {
+                        if (y < 25.0206) {
+                            z = 6
+                        }
+                    }
+                }
+            }
 
             binding.imageView1.alpha = 0f
             binding.imageView2.alpha = 0f
             binding.imageView3.alpha = 0f
-
+            binding.imageView4.alpha = 0f
+            binding.imageView5.alpha = 0f
+            binding.imageView6.alpha = 0f
 
 
 
@@ -125,6 +157,19 @@ class MainActivity : AppCompatActivity(),LocationListener {
             } else if (z == 3) {
                 binding.textView.text = "行政大樓"
                 binding.imageView3.alpha = 1f
+            }else if (z == 4) {
+                binding.textView.text = "信義大樓"
+                binding.imageView4.alpha = 1f
+            } else if (z == 5) {
+                binding.textView.text = "圖書館"
+                binding.imageView5.alpha = 1f
+            } else if (z == 6) {
+                binding.textView.text = "仁愛樓"
+                binding.imageView6.alpha = 1f
+            }else{
+                binding.imageView4.alpha = 0f
+                binding.imageView5.alpha = 0f
+                binding.imageView6.alpha = 0f
             }
         }
     }

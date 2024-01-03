@@ -16,12 +16,21 @@ class MainActivity2 : AppCompatActivity() {
         binding1.a11.alpha=0f
         binding1.a12.alpha=0f
         binding1.a13.alpha=0f
+        binding1.a14.alpha=0f
+        binding1.a15.alpha=0f
+        binding1.a16.alpha=0f
          if(z=="1"){
             binding1.a11.alpha=1f
         }else if(z=="2"){
             binding1.a12.alpha=1f
         }else if(z=="3"){
             binding1.a13.alpha=1f
+        }else if(z=="4") {
+            binding1.a14.alpha = 1f
+        }else if(z=="5"){
+            binding1.a15.alpha=1f
+        }else if(z=="6"){
+            binding1.a16.alpha=1f
         }
     }
 }
