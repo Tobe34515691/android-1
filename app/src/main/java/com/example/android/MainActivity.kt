@@ -119,7 +119,6 @@ class MainActivity : AppCompatActivity(),LocationListener {
             if (z == 1) {
                 binding.textView.text = "綜合大樓"
                 binding.imageView1.alpha = 1f
-                binding.imageView1.rotation = -90f
             } else if (z == 2) {
                 binding.textView.text = "和平樓"
                 binding.imageView2.alpha = 1f
