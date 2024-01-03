@@ -7,6 +7,14 @@
     tools:context=".MainActivity2">
 
     <ImageView
+        android:id="@+id/a11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a12"
+        app:srcCompat="@drawable/a9" />
+
+    <ImageView
         android:id="@+id/a12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,13 +31,6 @@
         app:layout_constraintTop_toTopOf="@+id/a12"
         app:srcCompat="@drawable/a8" />
 
-    <ImageView
-        android:id="@+id/a11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/a12"
-        app:srcCompat="@drawable/a9" />
     <ImageView
         android:id="@+id/a14"
         android:layout_width="wrap_content"
@@ -55,15 +56,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/a7" />
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="180dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/a17"
@@ -80,5 +72,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/a17"
         app:srcCompat="@drawable/qwer" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="180dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
